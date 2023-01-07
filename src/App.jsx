@@ -1,8 +1,7 @@
 import './App.css'
 import BProduct from './components/Banner/BProduct'
 import ProductSlider from './components/Banner/ProductSlider'
-import Footer from './components/Footer/Footer'
-// import { Route, Routes } from 'react-router-dom'
+import { Main } from './pages/Main'
 
 function App() {
 
@@ -10,6 +9,7 @@ function App() {
     <div className="App">
       <BProduct />
       <ProductSlider />
+      <Main></Main>
     </div>
   )
 }
