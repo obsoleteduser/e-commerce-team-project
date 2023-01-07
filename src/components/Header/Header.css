@@ -1,0 +1,10 @@
+header {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: black;
+}
+
+.header-contacts {
+    display: flex;
+    justify-content: space-between;
+}
