@@ -1,12 +1,15 @@
 import React from 'react'
-import './Products.css'
+import './Product.css'
 
 const Products = () => {
   return (
-    <div  className='Products'>
+    <div  className='products-container'>
       <div className="product-controller">
         <p>Popular products</p>
         
+      </div>
+      <div className="products">
+
       </div>
     </div>
   )
