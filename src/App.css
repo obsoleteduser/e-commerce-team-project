@@ -1,6 +1,5 @@
 .App{
-  width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   background-color: black;
-  overflow: hidden;
+  padding: 0 5%;
 }

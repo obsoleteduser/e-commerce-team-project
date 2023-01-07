@@ -6,6 +6,7 @@ const Products = () => {
     <div  className='Products'>
       <div className="product-controller">
         <p>Popular products</p>
+        
       </div>
     </div>
   )
