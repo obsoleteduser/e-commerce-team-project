@@ -28,7 +28,7 @@
     width: 77px;
     height: 78px;
     background: #E2F4FF;
-    border-radius: 500px;
+    border-radius: 50%;
     color: #EDA415;
     font-weight: 700;
     font-size: 22.09px;
@@ -53,4 +53,34 @@
     flex-direction: column;
     justify-content: space-between;
     width: 50%;
+}
+
+@media (10em <= width <= 600px) {
+    .newProduct {
+        flex-direction: column;
+    }
+    .jbl-div {
+        flex-direction: column;
+    }
+    .jbl-div img {
+        width: 90%;
+    }
+    .jbl-img {
+        padding: 1rem 1rem;
+        width: 90%;
+    }
+    .jbl-img .numbers{
+        margin-bottom: 2rem;
+    }
+    .jbl-img .numbers .num {
+        width: 55px;
+        height: 55px;
+    }
+    .divs {
+        gap: 2rem;
+        width: 100%;
+    }
+    .divs img {
+        width: 50%;
+    }
 }

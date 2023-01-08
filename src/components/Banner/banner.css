@@ -28,6 +28,8 @@
 
 .buttons-banner {
     margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
 }
 
 .carousell {
@@ -48,7 +50,44 @@
     padding: 1.5rem 2.5rem;
     display: flex;
     align-items: center;
+    gap: 1rem;
 }
-.product div{
-    margin-left: 3rem;
+
+@media (10em <= width <= 576px) {
+    .banner {
+        height: 20rem;
+    }
+    .img-canon {
+        max-width: 12rem;
+    }
+    .img-canon img {
+        width: 100%;
+    }
+    .carousell {
+        height: 100%;
+    }
+    .buttons-banner {
+        flex-direction: column;
+        width: 8rem;
+    }
+    .heading-canon-h1 {
+        max-width: 100%;
+    }
+
+    /* Product SLider Component */
+    .product-slider {
+        margin: 2rem 0;
+        gap: 8px;
+    }
+    .product-slider .product {
+        width: 7rem;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 10px 12px;
+    }
+    .product-slider .product img {
+        width: 4rem;
+    }
+
 }

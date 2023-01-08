@@ -31,7 +31,7 @@ function BProduct() {
                         <button className='viewButton'>View more</button>
                     </div>
                 </div>
-                <div>
+                <div className='img-canon'>
                   <img src={canon} alt="" />
                 </div>
             </div>
@@ -45,7 +45,7 @@ function BProduct() {
                         <button className='viewButton'>View more</button>
                     </div>
                 </div>
-                <div>
+                <div className='img-canon'>
                   <img src={canon} alt="" />
                 </div>
             </div>

@@ -12,7 +12,7 @@ import "swiper/css/navigation";
 function ProductSlider() {
   return (<>
   <div>
-  <Swiper
+    <Swiper
         spaceBetween={30}
         centeredSlides={true}
         navigation={true}
@@ -69,7 +69,7 @@ function ProductSlider() {
           </div>
         </div>
       </SwiperSlide>
-  </Swiper>
+    </Swiper>
       </div>
   </>)
 }

@@ -17,7 +17,7 @@ function Latest() {
       }}
       spaceBetween={30}
       autoplay={{
-        delay: 3000,
+        delay: 8000,
       }}
       pagination={{clickable:true}}
       modules={[Autoplay, Pagination]} 
