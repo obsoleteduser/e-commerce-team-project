@@ -1,6 +1,7 @@
 import './App.css'
 import BProduct from './components/Banner/BProduct'
 import ProductSlider from './components/Banner/ProductSlider'
+import Latest from './components/Latest News/Latest'
 import Newproducts from './components/NewProduct/Newproducts'
 import { Main } from './pages/Main'
 
@@ -11,6 +12,7 @@ function App() {
       <BProduct />
       <ProductSlider />
       <Newproducts />
+      <Latest />
       {/* <Main></Main> */}
     </div>
   )
