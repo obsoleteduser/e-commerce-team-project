@@ -1,18 +1,13 @@
 import React from 'react'
 import './Product.css'
 
-const Products = () => {
+export const Products = () => {
   return (
-    <div  className='products-container'>
+    <div  className='Products'>
       <div className="product-controller">
         <p>Popular products</p>
         
       </div>
-      <div className="products">
-
-      </div>
     </div>
   )
 }
-
-export default Products
