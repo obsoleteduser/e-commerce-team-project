@@ -1,33 +1,49 @@
 import React, { useContext, useEffect } from 'react'
 import { network } from '../../axios/network'
-import { GlobalContext } from '../../GlobalStateManagement'
+import { GlobalContext } from '../../GlobalStateManagement';
+import { ClipLoader } from 'react-spinners'
 import './Product.css'
 
 export const Products = () => {
 
-    const {products, setProducts} = useContext(GlobalContext)
+    const {products, 
+        setProducts, 
+        category,
+        loading,
+        setLoading
+    } = useContext(GlobalContext)
+
     const fetchData = async ()=>{
-        const data = await network.getProducts('./products/category/electronics?limit=8')
+        setLoading(true)
+        const data = await network.getProducts(`./products/category/${category}?limit=8`)
         console.log(data.data)
         setProducts(data.data)
+        setLoading(false)
     }
 
     useEffect(()=>{
         fetchData()
-    }, [])
+    }, [category])
 
   
 
   return (
       <div className="products">
-        <div className="card"></div>
-        <div className="card"></div>
-        <div className="card"></div>
-        <div className="card"></div>
-        <div className="card"></div>
-        <div className="card"></div>
-        <div className="card"></div>
-        <div className="card"></div>
+        { !loading ?
+            products.map(product =>(
+                <div key={product?.id} className='card'>
+                    <img src={product?.image}/>
+                    <p className='product-title'>{product?.title}</p>
+                    <p>{product?.price}$</p>
+                </div>
+            ) )
+            : <div className="loader">
+                <ClipLoader
+            color="#1B5A7D"
+            size={100}
+          />
+            </div>
+        }
       </div>
   )
 }

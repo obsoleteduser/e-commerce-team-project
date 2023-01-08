@@ -31,9 +31,22 @@
     color: #1B5A7D;
 }
 
+.loader{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+
+}
+
 
 @media screen and (max-width: 640px) {
     .products{
         grid-template-columns: repeat(1, 1fr);
     }
   }
+
+
