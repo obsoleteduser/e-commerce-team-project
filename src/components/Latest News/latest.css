@@ -39,3 +39,20 @@
     gap: 1rem; 
     justify-content: space-between;
 }
+
+@media (10em <= width <= 600px) {
+    .latest {
+        flex-direction: column;
+    }
+
+    .late-product {
+        width: 90%;
+        padding: 1.5rem 1rem;
+        flex-direction: column;
+    }
+
+    .late-product img {
+        width: 100%;
+        height: 15rem;
+    }
+}
