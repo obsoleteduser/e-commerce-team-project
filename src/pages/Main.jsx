@@ -1,16 +1,21 @@
 import React from 'react'
+import './Main.css'
 import BProduct from '../components/Banner/BProduct'
 import { Products } from '../components/Products/Products'
 import ProductsFilter from '../components/ProductsFilter/ProductsFilter'
-
-import './Main.css'
+import ProductSlider from "../components/Banner/ProductSlider"
+import Newproducts from "../components/NewProduct/Newproducts"
+import Latest from "../components/Latest News/Latest"
 
 export const Main = () => {
   return (
     <div className='Main'>
-        <BProduct></BProduct>
-        <ProductsFilter></ProductsFilter>
-        <Products></Products>
+        <BProduct />
+        <ProductSlider/>
+        <ProductsFilter />
+        <Products />
+        <Newproducts />
+        <Latest/>
     </div>
   )
 }
