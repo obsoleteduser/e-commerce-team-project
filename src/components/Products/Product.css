@@ -1,0 +1,19 @@
+.products{
+    background-color: white;
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: center;
+    justify-items: center;
+    padding: 2rem;
+}
+
+.card{
+    width: 18rem;
+    height: 18rem;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    overflow: hidden;
+}

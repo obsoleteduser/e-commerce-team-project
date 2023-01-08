@@ -1,7 +1,11 @@
 import React from 'react'
+import { network } from '../../axios/network'
 import './ProductFilter.css'
 
 const ProductsFilter = () => {
+
+  network.getProducts
+
   return (
 
       <div className="product-controller">

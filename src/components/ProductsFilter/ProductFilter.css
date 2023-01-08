@@ -19,6 +19,8 @@
 .section-title{
     color: #1B5A7D;
     width: 20%;
+    font-weight: 600;
+    font-size: 1.3rem;
 }
 
 .cbtn{
