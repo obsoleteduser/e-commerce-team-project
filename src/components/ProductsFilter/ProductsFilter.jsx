@@ -1,9 +1,9 @@
 import React from 'react'
-import './Product.css'
+import './ProductFilter.css'
 
-const Products = () => {
+const ProductsFilter = () => {
   return (
-    <div  className='products-container'>
+
       <div className="product-controller">
         <p className='section-title'>Popular products</p>
       <div className="buttons">
@@ -13,8 +13,8 @@ const Products = () => {
         <button className='mouse cbtn'>Mouse</button>
       </div>
       </div>
-    </div>
+    
   )
 }
 
-export default Products
+export default ProductsFilter

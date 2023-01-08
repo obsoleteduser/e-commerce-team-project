@@ -1,10 +1,11 @@
 import React from 'react'
-import Products from '../components/Products/Products'
+import ProductsFilter from '../components/ProductsFilter/ProductsFilter'
+
 
 export const Main = () => {
   return (
     <div className='Main'>
-        <Products></Products>
+        <ProductsFilter></ProductsFilter>
     </div>
   )
 }
