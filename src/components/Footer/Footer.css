@@ -1,0 +1,74 @@
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(226, 244, 255);
+    width: 100%;
+    align-items: center;
+}
+
+.footer-subscribe-section {
+    display: flex;
+    width: 93%;
+    justify-content: space-around;
+    height: 4em;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin: 0.5em 0.3em;
+}
+
+.footer-subscribe-section>:first-child {
+    font-weight: bold;
+    color: rgb(27, 90, 125);
+    font-size: 1.1em;
+}
+
+.footer-subscribe-section>div>button {
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: #eda415;
+    padding: 1.1em;
+    width: 20em;
+    text-align: left;
+    border-radius: 15px;
+}
+
+.footer-subscribe-section-telegram {
+    position: relative;
+    left: -30px;
+    top: 3px;
+    filter: invert(1);
+
+}
+
+.footer-subscribe-section>:last-child {
+    font-weight: bold;
+    font-size: 0.6em;
+    display: flex;
+    gap: 0.7em;
+}
+
+.footer-subscribe-section>:last-child img {
+    font-size: 2em;
+    margin-right: 0.5em;
+}
+
+.footer-subscribe-section-headphone {
+    filter: brightness(0) saturate(100%) invert(82%) sepia(15%) saturate(1486%) hue-rotate(13deg) brightness(86%) contrast(88%);
+}
+
+.footer-subscribe-section>div>img {
+    width: 1em;
+}
+
+
+
+@media screen and (max-width: 967px) {}
+
+@media screen and (max-width: 610px) {}
+
+@media screen and (max-width: 460px) {}
+
+@media screen and (max-width: 315px) {}
