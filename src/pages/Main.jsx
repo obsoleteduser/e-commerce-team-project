@@ -10,7 +10,7 @@ import Latest from "../components/Latest News/Latest"
 export const Main = () => {
   return (
     <div className='Main'>
-        <BProduct />
+        <BProduct/>
         <ProductSlider/>
         <ProductsFilter />
         <Products />
