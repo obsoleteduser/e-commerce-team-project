@@ -1,12 +1,11 @@
 import React from 'react'
-import './Products.css'
+import './Product.css'
 
 const Products = () => {
   return (
     <div  className='Products'>
       <div className="product-controller">
         <p>Popular products</p>
-        
       </div>
     </div>
   )

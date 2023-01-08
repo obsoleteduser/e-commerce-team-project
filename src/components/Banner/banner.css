@@ -1,4 +1,54 @@
 .banner {
     display: flex;
     justify-content: space-between;
+    padding: 0 5%;
+}
+
+.heading-canon-h1 {
+    color: #1B5A7D;
+    line-height: 64px;
+    max-width: 175px;
+    font-size: 43px;
+}
+
+.shopButton {
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.viewButton {
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: black;
+}
+
+.buttons-banner {
+    margin-top: 1rem;
+}
+
+.carousell {
+    display: flex;
+    align-items: center;
+    width: 20rem;
+}
+
+.product-slider {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 0;
+    padding: 0 5%;
+}
+.product-slider .product {
+    border: 1px solid #A5A5A5;
+    border-radius: 20px;
+    padding: 1.5rem 2.5rem;
+    display: flex;
+    align-items: center;
+}
+.product div{
+    margin-left: 3rem;
 }
