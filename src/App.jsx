@@ -1,19 +1,14 @@
 import './App.css'
-import BProduct from './components/Banner/BProduct'
-import ProductSlider from './components/Banner/ProductSlider'
-import Latest from './components/Latest News/Latest'
-import Newproducts from './components/NewProduct/Newproducts'
+import Header from './components/Header/Header'
 import { Main } from './pages/Main'
 
 function App() {
 
   return (
     <div className="App">
-      <BProduct />
-      <ProductSlider />
-      <Newproducts />
-      <Latest />
-      {/* <Main></Main> */}
+      <Header></Header>
+     <Main>
+     </Main>
     </div>
   )
 }
