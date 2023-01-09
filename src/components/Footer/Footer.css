@@ -1,7 +1,6 @@
 footer {
     display: flex;
     flex-flow: column wrap;
-    position: fixed;
     bottom: 0;
     background-color: rgb(226, 244, 255);
     align-items: center;
