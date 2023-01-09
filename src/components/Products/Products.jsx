@@ -5,7 +5,7 @@ import { ClipLoader } from 'react-spinners'
 import './Product.css'
 import { Card } from '../Card/Card';
 
-export const Products = () => {
+export const Products = ({grid}) => {
 
     const {products, 
         setProducts, 
@@ -29,7 +29,7 @@ export const Products = () => {
   
 
   return (
-      <div className="products">
+      <div className="products" style={{gridTemplateColumns: grid}}>
         { !loading ?
             products.map(product =>(
                <Card key={product.id} product={product}></Card> 

@@ -3,6 +3,9 @@ import { Products } from '../components/Products/Products'
 import { GlobalContext } from '../GlobalStateManagement'
 import { Card } from '../components/Card/Card'
 import { ClipLoader } from 'react-spinners'
+import { withNewProp } from '../components/HOC/EnhancedProducts'
+
+const EnhancedProducts = withNewProp(Products)
 
 export const Catalog = () => {
 
@@ -10,7 +13,7 @@ export const Catalog = () => {
 
   return (
     <div className="catalog">
-      <Products>
+      <EnhancedProducts>
       { !loading ?
             products.map(product =>(
                <Card key={product.id} product={product}></Card> 
@@ -22,7 +25,7 @@ export const Catalog = () => {
           />
             </div>
         }
-      </Products>
+      </EnhancedProducts>
     </div>
   )
 }
