@@ -1,0 +1,157 @@
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(226, 244, 255);
+    align-items: center;
+    width: 100vw;
+}
+
+.footer-subscribe-section {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    height: 4em;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin: 0.5em 0.3em;
+}
+
+.footer-subscribe-section>:first-child {
+    font-weight: bold;
+    color: rgb(27, 90, 125);
+    font-size: 1.1em;
+}
+
+.footer-subscribe-section>div>button {
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: #eda415;
+    padding: 1.1em;
+    width: 28vw;
+    text-align: left;
+    border-radius: 15px;
+}
+
+.footer-subscribe-section-telegram {
+    position: relative;
+    left: -30px;
+    top: 3px;
+}
+
+.footer-subscribe-section>:last-child {
+    font-weight: bold;
+    font-size: 0.6em;
+    display: flex;
+    gap: 0.7em;
+}
+
+.footer-subscribe-section>:last-child img {
+    font-size: 3em;
+    margin-right: 0.3em;
+}
+
+.footer-subscribe-section>div>img {
+    width: 1em;
+}
+
+.footer-description-section {
+    display: flex;
+    gap: 11vw;
+    padding: 2vw 5vw 3vw;
+}
+
+.footer-description-section-main-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.footer-description-section-main-info>div:nth-child(2) {
+    width: 14vw;
+    color: rgb(40, 98, 129);
+
+}
+
+.footer-description-section-main-info-social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-description-section-find-product,
+.footer-description-section-get-help,
+.footer-description-section-about-us {
+    color: rgb(40, 98, 129);
+}
+
+.footer-description-section-find-product>ul>li,
+.footer-description-section-get-help>ul>li,
+.footer-description-section-about-us>ul>li {
+    padding: 8px 0;
+    list-style-position: inside;
+}
+
+.footer-description-section-find-product>h4,
+.footer-description-section-get-help>h4,
+.footer-description-section-about-us>h4 {
+    text-align: left;
+}
+
+@media screen and (max-width: 750px) {
+    .footer-subscribe-section>:first-child {
+        display: none;
+    }
+
+    .footer-description-section-main-info>hr,
+    .footer-description-section-main-info>div:nth-child(2) {
+        display: none;
+    }
+
+
+    .footer-description-section-main-info>div:nth-child(2) {
+        width: 17vw;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .footer-subscribe-section {
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .footer-subscribe-section>div>button {
+        font-size: 0;
+        padding: 25px 5vw;
+    }
+
+    .footer-subscribe-section-telegram {
+        left: -16vw;
+        top: 2vw;
+    }
+
+}
+
+@media screen and (max-width: 970px) {
+
+    .footer-description-section-find-product,
+    .footer-description-section-get-help,
+    .footer-description-section-about-us {
+        display: none;
+    }
+
+    .footer-description-section-main-info-social {
+        gap: 7vw;
+    }
+
+    .footer-description-section-main-info>div:nth-child(2) {
+        width: 17vw;
+    }
+
+    .footer-description-section-main-info {
+        flex-direction: row;
+        gap: 10vw;
+    }
+}

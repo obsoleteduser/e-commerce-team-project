@@ -6,21 +6,40 @@ function Header() {
         <header>
             <div className='header-contacts-section'>
                 <div>Need help Call us: (+98) 0234 456 789</div>
-                <div className='header-contacts-right-side'><div className='header-contacts-right-side-left-part'><img className='header-contacts-section-img' src='src\assets\img\location-pin-solid.svg' alt='img'></img> Our store</div><div className='header-contacts-right-side-right-part'><img className='header-contacts-section-img' src='src\assets\img\truck-solid.svg'></img> Track your order</div></div>
+                <div className='header-contacts-section-right-side'>
+                    <div className='header-contacts-section-right-side-left-part'>
+                        <img src='src\assets\img\location-icon.svg' alt='location'></img> Our store</div>
+                    <div className='header-contacts-section-right-side-right-part'>
+                        <img src='src\assets\img\truck-icon.svg'></img> Track your order</div>
+                </div>
             </div>
             <nav className='header-nav-section'>
                 <div className='header-nav-section-left-part'>
-                    <div className='header-nav-section-logo'><img className='header-nav-section-img' src='src\assets\img\logo.png'></img></div>
-                    <div className='header-nav-section-input'><input placeholder='Search any thing...' type="text" /> <button>Search</button></div>
+                    <div className='header-nav-section-left-part-logo'>
+                        <img src='src\assets\img\main-logo.svg'></img>
+                    </div>
+                    <div className='header-nav-section-left-part-search'>
+                        <input placeholder='Search...' type="text" /> <button>Search</button>
+                    </div>
                 </div>
                 <div className='header-nav-section-right-part'>
-                    <div className='header-nav-section-user'><img src='src\assets\img\user-solid.svg'></img>Sign in</div>
-                    <div className='header-nav-section-heart'><img src='src\assets\img\heart-solid.svg'></img>Log in</div>
-                    <div className='header-nav-section-cart'><img src='src\assets\img\cart-shopping-solid.svg'></img>Cart in</div>
+                    <div className='header-nav-section-right-part-user'>
+                        <img src='src\assets\img\user-icon.svg'></img><div>Sign in</div>
+                    </div>
+                    <div className='header-nav-section-right-part-heart'>
+                        <img src='src\assets\img\heart-icon.svg'></img><div>Log in</div>
+                    </div>
+                    <div className='header-nav-section-right-part-cart'>
+                        <img src='src\assets\img\cart-icon.svg'></img><div>Cart</div>
+                    </div>
                 </div>
             </nav>
             <div className='header-pages-section'>
-                <div className='header-pages-section-browse'><select><option>Browse categories</option></select></div>
+                <div>
+                    <select className='header-pages-section-browse'>
+                        <option>Browse categories</option>
+                    </select>
+                </div>
                 <div>
                     <ul className='header-pages-section-ul'>
                         <li>Home</li>
