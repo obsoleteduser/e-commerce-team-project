@@ -43,7 +43,7 @@ function Header() {
                 </div>
                 <div>
                     <ul className='header-pages-section-ul'>
-                        <Link to="/home" className='link'><li>Home</li></Link>
+                        <Link to="/" className='link'><li>Home</li></Link>
                         <Link to="/catalog" className='link'><li>Catalog</li></Link>
                         <Link to="/blog" className='link'><li>Blog</li></Link>
                         <Link to="/pages" className='link'><li>Pages</li></Link>
