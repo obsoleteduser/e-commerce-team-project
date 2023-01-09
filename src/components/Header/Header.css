@@ -111,6 +111,11 @@ header {
     font-weight: 700;
 }
 
+.link{
+    text-decoration: none;
+    color: black;
+}
+
 @media screen and (max-width: 967px) {
 
     * {

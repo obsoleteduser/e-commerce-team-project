@@ -15,7 +15,9 @@
     background-color: orange;
     padding: 10px 20px;
     border-radius: 10px;
+    border: none;
     color: white;
+    cursor: pointer;
 }
 
 .viewButton {
@@ -24,6 +26,7 @@
     border: 1px solid black;
     border-radius: 10px;
     color: black;
+    cursor: pointer;
 }
 
 .buttons-banner {
