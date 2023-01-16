@@ -17,7 +17,6 @@ export const Products = ({grid}) => {
     const fetchData = async ()=>{
         setLoading(true)
         const data = await network.getProducts(`./products/category/${category}?limit=8`)
-        console.log(data.data)
         setProducts(data.data)
         setLoading(false)
     }
