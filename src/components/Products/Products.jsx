@@ -3,8 +3,9 @@ import { network } from '../../axios/network'
 import { GlobalContext } from '../../GlobalStateManagement';
 import { ClipLoader } from 'react-spinners'
 import './Product.css'
+import { Card } from '../Card/Card';
 
-export const Products = () => {
+export const Products = ({grid}) => {
 
     const {products, 
         setProducts, 
@@ -28,14 +29,10 @@ export const Products = () => {
   
 
   return (
-      <div className="products">
+      <div className="products" style={{gridTemplateColumns: grid}}>
         { !loading ?
             products.map(product =>(
-                <div key={product?.id} className='card'>
-                    <img src={product?.image}/>
-                    <p className='product-title'>{product?.title}</p>
-                    <p>{product?.price}$</p>
-                </div>
+               <Card key={product.id} product={product}></Card> 
             ) )
             : <div className="loader">
                 <ClipLoader
