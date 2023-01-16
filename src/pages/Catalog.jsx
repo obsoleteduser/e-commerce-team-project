@@ -28,7 +28,7 @@ export const Catalog = () => {
       <div className='catalog-category-div'>
           {
             catalogCategory && catalogCategory.map((item, i) => (
-              console.log(item),
+              // console.log(item),
               <div className='categories' key={i}>
                 <input onChange={catalogFetch} value={item} className='checkbox' type="checkbox" />
                 <label htmlFor="checkbox">{item}</label>
