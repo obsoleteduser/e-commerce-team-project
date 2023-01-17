@@ -9,6 +9,15 @@ export const Card = ({product}) => {
                     <img src={product.image}/>
                     <p className='product-title'>{product.title}</p>
                     <p>{product.price}$</p>
+                    <i style={{
+                      width: "4rem",
+                      height: "4rem",
+                      cursor: "pointer"
+                    }} class="fa-solid fa-heart">
+                    <img src='src/assets/img/heart-solid.svg'></img>
+                    </i>
+                   
+                    
                 </div>
   )
 }

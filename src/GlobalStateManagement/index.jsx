@@ -17,7 +17,7 @@ export const GlobalProvider = ({children}) => {
         loading,
         setLoading
     } 
-
+    
     return <GlobalContext.Provider value={values}>{children}</GlobalContext.Provider>
 
 }
