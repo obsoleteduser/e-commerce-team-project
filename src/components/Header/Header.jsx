@@ -35,7 +35,7 @@ function Header() {
                         <div className="favorites">
                         
                         <img src='src\assets\img\heart-icon.svg'></img>
-                       <sup style={{position: "absolute", top: "5rem", right: "12.5rem", backgroundColor: 'red', padding: ".2rem", borderRadius: "30%"}}>{favorites.length}</sup>
+                       <sup className='sup' >{favorites.length}</sup>
                             </div><div>Log in</div>
                     </div>
                     <div className='header-nav-section-right-part-cart'>

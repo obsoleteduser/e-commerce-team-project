@@ -111,7 +111,7 @@ header {
     font-weight: 700;
 }
 
-.link{
+.link {
     text-decoration: none;
     color: black;
 }
@@ -213,5 +213,26 @@ header {
         font-size: 6px;
         padding: 1vw 2vw;
         width: 96vw;
+    }
+}
+
+
+
+
+
+sup {
+    position: absolute;
+    top: 5rem;
+    right: 12.5rem;
+    background-color: red;
+    padding: .2rem;
+    border-radius: 30%;
+}
+
+
+@media screen and (max-width: 640px) {
+    sup {
+        top: 13rem;
+        right: 14.5rem;
     }
 }
