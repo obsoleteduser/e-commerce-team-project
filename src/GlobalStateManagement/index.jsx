@@ -8,6 +8,7 @@ export const GlobalProvider = ({children}) => {
     const [products, setProducts] = useState([])
     const [category, setCategory] = useState('electronics')
     const [loading, setLoading] = useState(false)
+    const [favorites, setFavorites] = useState([])
     
     const values = {
         products,
@@ -15,7 +16,9 @@ export const GlobalProvider = ({children}) => {
         category,
         setCategory,
         loading,
-        setLoading
+        setLoading,
+        favorites,
+        setFavorites
     } 
     
     return <GlobalContext.Provider value={values}>{children}</GlobalContext.Provider>

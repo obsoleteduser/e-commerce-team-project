@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { GlobalContext } from '../../GlobalStateManagement'
 import "./Header.css"
 
 function Header() {
+
+    const { favorites } = useContext(GlobalContext)
+
     return (
         <header>
             <div className='header-contacts-section'>
@@ -28,9 +32,14 @@ function Header() {
                         <img src='src\assets\img\user-icon.svg'></img><div>Sign in</div>
                     </div>
                     <div className='header-nav-section-right-part-heart'>
-                        <img src='src\assets\img\heart-icon.svg'></img><div>Log in</div>
+                        <div className="favorites">
+                        
+                        <img src='src\assets\img\heart-icon.svg'></img>
+                       <sup style={{position: "absolute", top: "5rem", right: "12.5rem", backgroundColor: 'red', padding: ".2rem", borderRadius: "30%"}}>{favorites.length}</sup>
+                            </div><div>Log in</div>
                     </div>
                     <div className='header-nav-section-right-part-cart'>
+                    
                         <img src='src\assets\img\cart-icon.svg'></img><div>Cart</div>
                     </div>
                 </div>
